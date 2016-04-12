@@ -1,0 +1,292 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Segunda Aplicacion</title>
+ 
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/temasapp2.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+ 
+<body onLoad="MM_preloadImages('imagenes/atlixco1.jpg')">
+<div data-role="page" id="Principal" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+	<h1>Semana Santa </h1>
+  </div>
+  <div data-role="content" align="center">
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','imagenes/atlixco1.jpg',1)"><img src="imagenes/semanas.jpg" width="315" height="160" id="Image19"></a>
+   
+ 	    <br>
+        </div>
+<div>
+	<ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+	<li class="ui-first-child ui-last-child">
+  	<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  	<h2>¿Qué es la semana santa?</h2>
+  	  </a>
+  	</li>
+  	<li class="ui-first-child ui-last-child">
+ 	  <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  	  <h2>¿Qué religiones la celebran?</h2>
+      </a>
+    </li>
+   <li class="ui-first-child ui-last-child">
+	 <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  	 <h2>La semana santa en Atlixco</h2>
+     </a>
+   </li>
+  <li class="ui-first-child ui-last-child">
+  	 <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+ 	 <h2>Celebración en el estado de Puebla</h2>
+  	 </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+   	  <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>Iztapalapa</h2>
+      </a>
+      </li>
+      <li class="ui-first-child ui-last-child">
+   	  <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>San Luis Potosí</h2>
+      </a>
+      </li>
+      <li class="ui-first-child ui-last-child">
+   	  <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>Guerrero</h2>
+      </a>
+      </li>
+      <li class="ui-first-child ui-last-child">
+   	  <a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>Oaxaca</h2>
+      </a>
+      </li>
+   </ul>
+</div>
+<div data-role="footer" align="center" data-theme="a">
+  <div>
+  	 <img src="imagenes/persona_azul.png" width="46" height="46">
+  </div>
+  <div>
+     <h4>Aplicacion Dos</h4>
+ 	 <h4>Luis Alberto Ramos Luna</h4>
+   </div>
+</div>
+</div> 
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1>¿Qué es la semana santa?</h1>
+    </div>
+   <div data-role="content" align="center">
+La Semana Santa es la conmemoración anual cristiana de la Pasión, Muerte y Resurrección de Jesús de Nazaret. Por eso, es un período de intensa actividad litúrgica dentro de las diversas confesiones cristianas. Da comienzo el Domingo de Ramos y finaliza el Domingo de Resurrección,1 aunque su celebración suele iniciarse en varios lugares el viernes anterior (Viernes de Dolores) y se considera parte de la misma el Domingo de Resurrección. La fecha de la celebración es variable (entre marzo y abril según el año) ya que depende del calendario lunar. La Semana Santa va precedida por la Cuaresma, que finaliza en la Semana de Pasión donde se celebra la eucaristía en el Jueves Santo, se conmemora la Crucifixión de Jesús el Viernes Santo y la Resurrección en la Vigilia Pascual durante la noche del Sábado Santo al Domingo de Resurrección. Durante la Semana Santa tienen lugar numerosas muestras de religiosidad popular a lo largo de todo el mundo, destacando las procesiones y las representaciones de la Pasión.
+  <div>
+  	 <img src="imagenes/semana1.jpg" width="300" height="200">
+  </div>
+   <div>
+  	 <img src="imagenes/semana2.jpg" width="300" height="200">
+  </div>
+  </div>
+ <div data-role="footer" data-theme="a">
+   <h4>Aplicacion Dos, LARL</h4>
+  </div>
+</div>
+</div>
+ 
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>¿Qué religiones la celebran?</h1>
+ </div>
+ <div data-role="content" align="center">
+<p><h3>Testigos de Jehova</h3></p>
+<p>Celebran la Conmemoración de la Muerte del Señor Jesucristo que es en la 14ava luna llena,14 del Més de Nisán, calendario hebreo Lunar. 
+14 de Nisán recae el día Martes 30 de Marzo después de la puesta del sol. 
+       <div>
+        <img src="imagenes/testigos.jpg" width="300" height="200">
+    </div>
+    <p><h3>Judios</h3></p>
+<p>Los Judios celebran su Pascua y disfrutan también de las vacaciones en éstas fechas, pero nada que ver con el Cristianismo. 
+En la Pascua Judia(Pésaj) Los judíos celebran para conmemorar su escape del cautiverio de manos de los egipcios</p>
+<div>
+        <img src="imagenes/pascua.jpg" width="300" height="200">
+    </div>
+     <p><h3>Católicos</h3></p>
+<p>La Semana Mayor para los católicos es la época en la que se recuerda y celebra los hechos más relevantes en la vida de Jesús de Nazaret (la Pasión, Muerte y Resurrección), comenzando con el llamado Domingo de Ramos y finalizando el Domingo de Resurrección o también llamado de Pascua.</p> 
+    <div>
+        <img src="imagenes/catolica.jpg" width="327" height="154">
+    </div>
+    <p><h3>Cristianos</h3></p>
+<p>Para los miembros de la iglesia cristiana evangélica, la Semana Santa es el tiempo para recordarla muerte de Cristo. Para conmemorarla, se congregan en una jornada de oración y adoración,la cual inicia el Jueves Santo a las 9:00 de la noche y se extiende por 24 horas.
+En esta reunión se dan cita grupos artísticos y musicales, ya que los cristianos creen que “Dios habita en medio de la alabanza”. Además, para ellos es fundamental la vigilia, es decir, pasar una noche en vela y adorando a Dios. </p>
+ <div>
+        <img src="imagenes/cristianos.jpg" width="280" height="180">
+    </div>
+    <div data-role="footer" data-theme="a">
+       <h4>Aplicacion Dos, LARL</h4>
+    </div>
+  </div>
+</div>
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1>La semana santa en Atlixco</h1>
+ </div>
+ <div data-role="content" align="center">
+   <p>“Entre las tradiciones que han distinguido a Atlixco es la ‘Procesión del Silencio’ en la comunidad de Nexatengo, la cual es realizada por la cofradía de Nazarenos de la entidad y la ‘Procesión de Engrillados’. Cabe mencionar que ambos eventos son actos de penitencia, fe y de arrepentimiento, mismos que se realizarán el próximo 6 de abril a partir de la seis de la mañana en Santa Lucía Cosamaloapan”, refirió el alcalde.</p>
+ <p>Cabe precisar que en la “Procesión de los Engrillados” los participantes se caracterizan por vestir de luto y portar pesadas cadenas de aproximadamente 60 kilos, además de ponerse espinas en el cuerpo. Ellos recorren las principales calle de la ciudad y tienen una preparación, tanto espiritual como física de dos meses.</p>
+ <p>Asimismo, Camacho Corripio invitó a todos los poblanos y personas de otros estados vecinos a admirar el tapete monumental de “Flores de Primavera”, el cual fue hecho con más de 160 mil plantas y con imágenes alusivas a esta temporada de Semana Santa, y otro con diseños representativos de Atlixco.</p>
+ <div data-role="main" class="ui-content">
+ <div data-role="collapsible" data-content-theme="false">
+   <h1>Imágenes de Semana Santa en Atlixco</h1>
+  <div>
+        <img src="imagenes/atlixco1.jpg" width="280" height="180">
+    </div>
+     <div>
+        <img src="imagenes/atlixco2.jpg" width="280" height="180">
+    </div>
+     <div>
+        <img src="imagenes/atlixco3.jpg" width="280" height="180">
+    </div>
+     <div>
+        <img src="imagenes/atlixco4.jpg" width="280" height="180">
+    </div>
+     <div>
+        <img src="imagenes/atlixco5.jpg" width="280" height="180">
+    </div>
+     </div>
+   </div>
+ <div data-role="footer" data-theme="a">
+     <h4>Aplicacion Dos, LARL</h4>
+    </div>
+  </div>
+</div>
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+       <h1>Celebración en el estado de Puebla</h1>
+ </div>
+ <div data-role="content" align="center">
+<p>La celebración de Semana Santa es para los poblanos una de las conmemoraciones más importantes del año cristiano; durante estos días aquellas personas que profesan alguna de las diferentes confesiones de la fe cristiana acuden a las iglesias más emblemáticas de Puebla para recordar la Pasión, Muerte y Resurrección de Jesús de Nazaret.</p>
+     <div>
+       <img src="imagenes/puebla.jpg" width="300" height="200">
+     </div>
+   </div>
+ <div data-role="footer" data-theme="a">
+    <h4>Aplicacion Dos, LARL</h4>
+  </div>
+ </div>
+</div>
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>Iztapalapa</h1>
+   </div>
+ <div data-role="content" align="center">
+<p>Iztapalapa, una de las 16 delegaciones que constituyen el Distrito Federal, ha sustituido sus canales, chinampas y trajineras con verduras y flores, por ejes viales y el Metro. Tiene en el Cerro de la Estrella, en sus templos, plazas y jardines de Ia cabecera, los espacios sagrados donde se escenifica cada año la representación ritual por excelencia. La coexistencia de Iztapalapa con la gran urbe, no ha logrado borrar Ias viejas costumbres; sus habitantes renuevan sus lazos de amistad, de compadrazgo y vecindad, de pertenencia e identidad con el barrio y con Ia localidad en las distintas fiestas de su calendario, pero es en la Semana Santa cuando éstos aparecen con mayor fuerza.</p>
+<p>Los moradores de los ocho barrios: La Asunción, San Ignacio, Santa Bárbara, San Lucas, San Pablo, San Miguel, San Pedro y San José, conviven entre la modernidad y la tradición: los que mantienen un ancestral apego a la tierra y los que llegan y demandan un lugar donde vivir. Comparten una costumbre heredada de muchos años, un deseo de mantener la unidad, a través de la cooperación y el esfuerzo colectivo para representar, con gran realismo, la Pasión de Jesucristo en una fiesta que permite la reafirmación y Ia cohesión cultural de sus residentes.</p>
+   <div>
+      <img src="imagenes/iztapalapa.jpg" width="400" height="300">
+    </div>
+ <div data-role="footer" data-theme="a">
+     <h4>Aplicacion Dos, LARL</h4>
+  </div>
+ </div>
+</div>
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>San Luis Potosí</h1>
+   </div>
+ <div data-role="content" align="center">
+<p> El Viernes Santo en Mexquitic es una buena opción para convivir con un pueblo y sus tradiciones. El número de turistas es mucho menor que en Real de Catorce, e ínfimo si se compara con otros sitios. Los lugareños han instalado afuera de sus casas los altares que hacen alusión a tan memorable fecha, destacando los doce por donde pasará la procesión rumbo al Calvario. Son las doce estaciones de la cruz.</p>
+
+<p>A eso de las 11:00 am, bajo un sol que se anuncia fuerte, el sacerdote invita a los espectadores a entrar a la iglesia, donde Jesús será juzgado, no sin antes haber sido vilipendiado por los romanos en el atrio. Concluyendo el juicio comienza el recorrido por las calles, deteniéndose en cada estación, donde alguien da lectura a un pasaje bíblico. Posteriormente se inicia el ascenso al cerro, el cual presenta una pendiente mucho más inclinada que la del cerro de Catorce, sin mencionar las plantas espinosas, nopales y lechuguillas que tornan las cosas más difíciles. Los romanos no cesan de flagelar al Cristo, quien en verdad paga su penitencia y carga con el pesado madero a cuestas. Nadie le ayuda. </p>
+
+<p>Como acto final se lleva a cabo la crucifixión, también bajo un límpido y azulísimo cielo muy propio del Altiplano mexicano. A eso de las dos de la tarde, y con los rayos solares cayendo a plomo, la ceremonia concluye, y es oportuno entonces buscar dónde comer. Una vuelta por Ahualulco (donde confeccionan flores de cera como artesanía) o la Hacienda La Parada, pocos kilómetros adelante, rumbo a Zacatecas, son buenas opciones, y en esos mismos sitios se pueden observar los altares con la Dolorosa, una costumbre muy arraigada entre los potosinos. Aparte de las actividades locales y los nuevos recorridos por la ciudad en “tranvía”, las mismas oficinas de turismo organizan paseos y excursiones de uno, dos o más días a otras regiones de la entidad, como a las cascadas de Tamasopo en la Huasteca, o al ya mencionado Real de Catorce.</p>
+   <div>
+      <img src="imagenes/sanluis.jpg" width="400" height="300">
+    </div>
+ <div data-role="footer" data-theme="a">
+     <h4>Aplicacion Dos,LARL</h4>
+  </div>
+ </div>
+</div>
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>Guerrero</h1>
+   </div>
+ <div data-role="content" align="center">
+<h3>Martes Santo</h3>
+<p>Se efectúa la Procesión de las Ánimas durante la noche y es acaso uno de los momentos más impactantes de la fiestas de la Semana Mayor, sin mencionar la solemnidad con que los participantes –encruzados, flagelantes y ánimas- llevan a cabo su papel en las procesiones. Estos personajes se prepararon, física y espiritualmente, durante todo el año para participar con el objetivo de lavar sus culpas. 
+A los encruzados podrás identificarlos por el rollo de ramas (de 2.5 metros de largo y 50 kg de peso) espinosas que cargan sobre los hombros y atan a sus brazos, lo que hace sangrar su cuello y espalda. Los flagelantes, por su parte, cargan una cruz de madera, de 3 metros de alto y 6 kilos de peso, y llevan en una mano una disciplina (instrumento flagelante) que utilizan para lacerarse la espalda.</p>
+<h3>Miércoles Santo</h3>
+<p>El Templo de Santa Prisca, uno de los ejemplos más excepcionales del barroco mexicano, es el escenario del Huerto de los Olivos, representado por una escenografía montada por los participantes. Lo curioso de este acontecimiento son los asistentes que llegan con distintas especies de aves y pericos en jaulas.
+A las 21 horas, parte una procesión del Templo de la Santísima Trinidad, donde se reúnen imágenes provenientes de otros templos de este Pueblo Mágico. Los tradicionales penitentes también tienen su lugar en este evento; no pierdas de vista a las cofradías de encapuchados que caminan vestidos de negro y con cadenas sujetas a los tobillos.</p>
+<h3>Jueves Santo</h3>
+<p>Una vez más, el atrio del Templo de Santa Prisca es el escenario de uno de los pasajes de esta historia: Jesús en el Huerto de Getsemaní, que permanece durante la mañana. Por la tarde, se lleva a cabo la representación del Lavatorio donde Jesús lava los pies a sus discípulos, antes de celebrarse la Última Cena y, por la noche, los actores llevan a cabo la escenificación del Prendimiento de Jesús seguida de una procesión.</p>
+<h3>Viernes Santo</h3>
+<p>Es el día más importante de las fiestas de Semana Santa por la serie de eventos que se llevan a cabo en distintos puntos de Taxco. Desde muy temprano, a las 6 de la mañana, los eventos inician con el Sermón de la Flagelación de Jesús; a las 10 horas, la procesión de Jesús al calvario y en la Plaza Borda, se escenifican las tres caídas. Por la tarde, a las 16 horas, Jesús es representado en la crucifixión junto con Dimas y Gestas en el ex convento de San Bernardino de Siena. Para terminar, a la media noche se da lugar a otra de las procesiones más importantes: la del Santo Entierro, donde la figura de Cristo es llevada en un ataúd de cristal por las calles empedradas de la ciudad.</p>
+<h3>Sábado de Gloria</h3>
+<p>Los habitantes del Pueblo Mágico de Taxco guardan silencio durante el día en señal de luto, pero es en la noche, a las cero horas, cuando se lleva a cabo la misa de Resurrección, se queman los Judas y se regalan palmas benditas en señal de júbilo.</p>
+   <div>
+      <img src="imagenes/guerrero.jpg" width="400" height="300">
+    </div>
+ <div data-role="footer" data-theme="a">
+     <h4>Aplicacion Dos, LARL</h4>
+  </div>
+ </div>
+</div>
+<div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>Oaxaca</h1>
+   </div>
+<div data-role="content" align="center">
+   <div>
+ <h3>Viernes de Dolores</h3>
+
+<p>El Sexto Viernes de Cuaresma, el Viernes de Dolores es una tradición de gran devoción y un objeto de veneración especial en la Ciudad de Oaxaca. Se rinde culto a la madre de Dios, colocando un Altar en el mejor lugar de las Iglesias casas u oficinas.</p>
+<p>Esta tradición arranca desde la época colonial, y más ciertamente desde cuando los Padres jesuitas consagraron una espaciosa capilla de su templo magnífico a la Virgen de los Dolores, tributando culto solemne a la imagen. Después la devoción se fincó en el Patrocinio y en San Cosme y San Damián, donde hasta la fecha perdura.</p>
+<p>Los Altares de Dolores se preparan con anticipación desde la siembra del maíz en macetas de barro claro; figuras de animalitos trabajados en arcilla porosa para que germinen los granos de chía, depositándolos en todos los lugares cerrados a la luz, para que muestren una singular coloración y con los que se adornan las gradas del altar bajo un dosel de cortinajes.</p>
+<p>Toda la gente acude en la víspera del Viernes de Dolores, a adquirir sus flores y los manojos de laurel de álamo y de óleo y otras ramas de fresco perfume que se expenden en las calles de la Ciudad. En la Alameda de León se formalizó al correr del tiempo, todo un paseo en que las mujeres acuden, mientras un grupo de música deleita a la concurrencia. Ha quedado la grata costumbre de participación de la Banda del Estado, que desarrolla un programa selecto sin faltar en la parte culminante la interpretación de dos o tres números del "Stabat Mater" de Gioacchino Rossini, y el también "Stabat Mater" de Juan Matías cuya partitura pone la nota característica en la uncida noche del Viernes Santo.</p>
+<p>Son muy famosos los altares que se instalan en los barrios de China y el Peñasco, Xochimilco y Jalatlaco, donde las familias "echan la casa por la ventana" en apasionada competición.<P>
+<p>Es tradición que toda la familia y amigos se reúnan para admirar el Altar de Dolores, ante el que llagada la noche se reza devotamente el rosario y se cantan los "misterios", bellas piezas compuestas por compositores oaxaqueños. Al término, los concurrentes disfrutan de sendos vasos de aguas frescas de horchata, jamaica, chía, etc. Y en muchos se ofrecen chocolates y pan de manteca; o se sirven bocadillos hechos a base de pescado u otras viandas de "vigilia".</p>
+     <div data-role="main" class="ui-content">
+ <div data-role="collapsible" data-content-theme="false">
+   <h1>Semana Santa en Oaxaca</h1>
+      <img src="imagenes/oaxaca.jpg" width="400" height="300">
+    </div>
+    </div>
+ <div data-role="footer" data-theme="a">
+     <h4>Aplicacion Dos, LARL</h4>
+  </div>
+ </div>
+</div>
+ </body>
+ </html>
